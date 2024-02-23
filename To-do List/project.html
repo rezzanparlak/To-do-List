@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="project.css">
+    <script src="./project.js"></script>
+</head>
+<body>
+    <div id="overlay">
+    </div>
+
+    <div class="popUp">
+        <div>
+            <span>New Task Name</span>
+        </div>
+        <div>
+            <input type="text"id="listInput">
+        </div>
+        <div>
+            <button id="create">Create</button>
+            <button id="quit">Cancel</button>
+        </div>
+    </div>
+
+    <div class="leftPanel">
+        <div class="teamLeader">
+            <div class="teamLeaderImg">
+                <div class="leaderImg">
+                    <img src="./f4.jpeg">
+                </div>
+            </div>
+
+            <div class="teamLeaderInfo">
+                <span>Batuhan Fidan</span> <br>
+                <span>batuhan.fidan@ug.bilkent.edu.tr</span>
+            </div>
+        </div>
+
+        <div class="projectMembers" id="leftHover">
+            <div id="mainPage">
+            </div>
+
+            <div>
+                <span>&#9734; <span>Project Members</span></span>
+            </div>
+        </div>
+
+        <div class="lists">
+            <ul id="tasks">
+            </ul>
+        </div>
+    
+        <div class="newList" id="newList">
+            <span>&#x002B;</span>
+            <span>New List</span>
+        </div>
+    </div>
+
+
+    <div class="rightPanel" id="pjMem">
+        <p class="header">&#9734; <span>Project Members</span></p>
+
+        <div>
+            <div id="image">
+                <img src="./f4.jpeg">
+            </div>
+            <section class="memInfo">
+                <h3>Batuhan Fidan</h3>
+                <h4>Section: 01</h4>
+                <h4>22103803</h4>
+            </section>
+        </div>
+        <div>
+            <div id="image">
+                <img src="./f2.jpeg">
+            </div>
+            <section class="memInfo">
+                <h3>Duru Kırcı</h3>
+                <h4>Section: 01</h4>
+                <h4>22202090</h4>
+            </section>
+        </div>
+        <div>
+            <div id="image">
+                <img src="./f1.jpg">
+            </div>
+            <section class="memInfo">
+                <h3>Rezzan Parlak</h3>
+                <h4>Section: 01</h4>
+                <h4>22102610</h4>
+            </section>
+        </div>
+        <div>
+            <div id="image">
+                <img src="./f3.jpeg">
+            </div>
+            <section class="memInfo">
+                <h3>Zeynep Türk</h3>
+                <h4>Section: 01</h4>
+                <h4>22103239</h4>
+            </section>
+        </div>
+    </div>
+
+    <div class="rightPanel" id="to-do">
+        <div id="taskInfo">
+
+        </div>
+        
+        <div id="inputBg">
+            <div class="inputTask">
+                <span>&#x002B;</span>
+                <input type="text" id="addTask" placeholder="Add a Task">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
